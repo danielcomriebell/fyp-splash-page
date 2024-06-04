@@ -22,7 +22,6 @@ export default function Hero() {
         <p>We use AI to tailor the online shopping experience to each customer, just like an in-store sales associate.</p>
         <button onClick={toggleModal} className="cta-button">Contact Us</button>
       </div>
-
       {modalOpen && <WaitlistModal toggleModal={toggleModal} />}
     </div>
   );
