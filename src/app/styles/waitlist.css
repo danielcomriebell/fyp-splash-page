@@ -20,6 +20,7 @@
 .waitlist-form-button{
     background-color: white;
     color: black;
+    font-weight: 400;
 }
 
 .waitlist-header-content h1{
@@ -199,7 +200,112 @@
 
 
 
+/* @media screen and (max-width: 800px) {
+
+  
+} */
+
+
 @media screen and (max-width: 800px) {
+    /* .full-width{
+        width: 100%;
+    } */
+
+    .waitlist-header {
+        flex-direction: column; /* Stack the children vertically */
+    }
+
+    .waitlist-header-logo {
+        margin-top: 0px;
+    }
+
+    .waitlist-content{
+        height: 60%;
+        width: 100%;
+    }
+
+    .waitlist-header-content h1{
+        font-size: 36px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .waitlist-header-content p{
+        text-align: center;
+    }
+      
+
+    .waitlist-modal-close {
+        position: absolute; /* Keep the button absolutely positioned */
+        top: 20px; /* Adjust top position for mobile */
+        right: 20px; /* Adjust right position for mobile */
+        width: 15px; /* Adjust size if necessary */
+    }
+
+
+    .waitlist-content form{
+        /* max-width: 85; */
+        width: 85%;
+    }
+
+    .waitlist-content button{
+        width: 100%
+    }
+
+    .waitlist-content input{
+        width: 100%;
+    }
+
+
+    .waitlist-content p{
+        /* max-width: 300px; */
+        width: 85%;
+        position: relative;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .waitlist-form{
+        position: relative;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+
+    /* .waitlist-form-button{
+        background-color: white !important;
+    } */
+
+    .waitlist-content form {
+        grid-template-columns: 1fr; /* Overrides the 2-column layout to a single column */
+        gap: 15px; /* Adjust the gap if needed for the mobile layout */
+    }
+
+    /* Ensure the input fields take the full width, but this might already be set by your existing styles */
+    .input-field {
+        width: 100%; /* Ensures input fields take up the full width of the grid cell */
+        font-size: 16px;
+    }
+
+    .waitlist-success{
+        font-size: 25px;
+        text-align: left !important;
+        width: 100% !important;
+        /* margin-top:0px; */
+        /* margin-bottom:0px; */
+        /* text-align: left !important; */
+    }
+    
+
+    /* .waitlist-content form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; 
+        width: 100%;
+        max-width: 100%;
+    } */
+}
+
+@media screen and (max-width: 650px) {
 
     /* .full-width{
         width: 100%;
@@ -297,12 +403,6 @@
         width: 100%;
         max-width: 100%;
     } */
-
-
-    
-    
-
-  
 }
 
 @keyframes fadeIn {
