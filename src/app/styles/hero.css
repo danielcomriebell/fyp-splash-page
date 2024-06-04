@@ -1,0 +1,149 @@
+.hero-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000; /* Added background color */
+}
+
+.hero-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-container h1 {
+    color: white;
+    font-family: "sohne";
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    letter-spacing: 1px;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 730px;
+}
+
+.cta-text {
+    font-size: 15px !important;
+    border: 1px solid white;
+    padding: 5px !important;
+    max-width: 350px !important;
+    margin-bottom: 25px;
+}
+
+.hero-container p {
+    color: white;
+    font-family: "sohne";
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 730px;
+}
+
+.cta-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .hero-container h1 {
+        font-size: 40px;
+        line-height: 45px;
+        width: 70%;
+    }
+
+    .hero-container p {
+        font-size: 18px;
+        line-height: 22px;
+        width: 70%;
+    }
+
+    .cta-text {
+        font-size: 14px !important;
+        max-width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero-container h1 {
+        font-size: 35px;
+        line-height: 40px;
+        width: 75%;
+    }
+
+    .hero-container p {
+        font-size: 17px;
+        line-height: 20px;
+        width: 75%;
+    }
+
+    .cta-text {
+        font-size: 15px !important;
+        max-width: 280px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-container h1 {
+        font-size: 30px;
+        line-height: 35px;
+        width: 85%;
+    }
+
+    .hero-container p {
+        font-size: 16px;
+        line-height: 18px;
+        width: 85%;
+    }
+
+    .cta-text {
+        font-size: 15px !important;
+        max-width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-container h1 {
+        font-size: 25px;
+        line-height: 30px;
+        width: 90%;
+    }
+
+    .hero-container p {
+        font-size: 14px;
+        line-height: 16px;
+        width: 90%;
+    }
+
+    .cta-text {
+        font-size: 11px !important;
+        max-width: 200px !important;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        width: 120px;
+    }
+}

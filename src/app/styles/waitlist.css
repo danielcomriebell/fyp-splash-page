@@ -1,0 +1,316 @@
+.waitlist-container{
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    position:fixed;
+    z-index: 100;
+}
+
+
+.waitlist-background {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Use RGBA for semi-transparent background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* animation: fadeIn 0.5s ease-in-out forwards; */
+
+}
+
+.waitlist-form-button{
+    background-color: white;
+    color: black;
+}
+
+.waitlist-header-content h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.waitlist-content {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid white;
+    padding: 50px;
+    border-radius: 15px;
+    max-width: 500px;
+    min-height: 500px;
+    /* animation: fadeIn 0.5s ease-in-out forwards; */
+
+    /* Remove the opacity property from here */
+}
+
+.waitlist-content input,
+.input-field {
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color:black;
+    color:white;
+    border: 1px solid white;
+    /* Other styles like padding, border, etc. */
+}
+
+.waitlist-background, .waitlist-content {
+    animation: fadeIn 300ms ease-in-out forwards;
+}
+
+.waitlist-container.fade-out .waitlist-background,
+.waitlist-container.fade-out .waitlist-content {
+    animation: fadeOut 300ms ease-in-out forwards;
+}
+
+
+.waitlist-content form{
+    width: 100%;
+    max-width: 100%;
+}
+
+.waitlist-header-content {
+    flex: 2; /* Allows it to grow twice as much as the logo */
+    /* ... other styles ... */
+  }
+
+/* .waitlist-content input{
+    display:block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 30px;
+    outline:0;
+    margin-bottom: 20px;
+    -webkit-text-decoration: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 16px;
+} */
+
+.waitlist-content input{
+    width: 100%;
+}
+
+
+.waitlist-content p{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    /* font-size: 13px; */
+    margin-bottom: 40px;
+    line-height: 1.6
+}
+
+.waitlist-success{
+    font-size: 30px;
+}
+
+/* .waitlist-form{
+    display: flex;
+} */
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust based on your design */
+}
+
+.input-field {
+    flex: 1; /* Makes input fields take up equal space */
+    margin-right: 10px; /* Adds spacing between the inputs; adjust as needed */
+}
+
+.input-field:last-child {
+    margin-right: 0; /* Removes margin from the last input field in a group */
+}
+
+
+
+.waitlist-modal-close {
+    position: absolute; /* Absolute position with respect to the modal */
+    top: 20px; /* Space from the top of the modal */
+    right: 20px; /* Space from the right of the modal */
+    cursor: pointer; /* To show it's clickable */
+    width: 15px; /* Size of the close button */
+    height: auto; /* Keep the aspect ratio */
+}
+
+.waitlist-header-logo {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+  }
+
+  .waitlist-header-logo img {
+    width: 25px;
+    margin-right: 5px;
+  }
+  
+  .waitlist-header-logo h1 {
+    font-size: 25px; /* Adjust the size as needed */
+    font-family:"stacion-light";
+    position: relative;
+    top: 2px;
+    margin: 0; /* Removes default margin from the h1 */
+  }
+
+  .waitlist-content form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    gap: 20px; /* Sets the gap between grid items */
+    width: 100%;
+    max-width: 100%;
+}
+
+.input-label{
+    margin-bottom: 5px;
+}
+
+    .input-container {
+        display: flex;
+        flex-direction: column; /* Makes sure the label is above the input field */
+        /* No need for flex: 1; here since grid layout controls the input size */
+    }
+
+    /* You might want to adjust the width of the inputs to 100% within the .input-container to ensure they fill the grid column */
+    .input-field {
+        width: 100%; /* Ensures input fields take up the full width of their grid cell */
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 10px;
+        /* padding: 10px; */
+        /* padding: 5px; */
+    }
+
+
+    .waitlist-success{
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+
+
+@media screen and (max-width: 800px) {
+
+    /* .full-width{
+        width: 100%;
+    } */
+
+    .waitlist-header {
+        flex-direction: column; /* Stack the children vertically */
+    }
+
+    .waitlist-header-logo {
+        margin-top: 0px;
+    }
+
+    .waitlist-content{
+        height: 100%;
+        width: 100%;
+    }
+
+    .waitlist-header-content h1{
+        font-size: 36px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .waitlist-header-content p{
+        text-align: center;
+    }
+      
+
+    .waitlist-modal-close {
+        position: absolute; /* Keep the button absolutely positioned */
+        top: 70px; /* Adjust top position for mobile */
+        right: 70px; /* Adjust right position for mobile */
+        width: 15px; /* Adjust size if necessary */
+    }
+
+
+    .waitlist-content form{
+        /* max-width: 85; */
+        width: 85%;
+    }
+
+    .waitlist-content button{
+        width: 100%
+    }
+
+    .waitlist-content input{
+        width: 100%;
+    }
+
+
+    .waitlist-content p{
+        /* max-width: 300px; */
+        width: 85%;
+        position: relative;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .waitlist-form{
+        position: relative;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+
+    /* .waitlist-form-button{
+        background-color: white !important;
+    } */
+
+    .waitlist-content form {
+        grid-template-columns: 1fr; /* Overrides the 2-column layout to a single column */
+        gap: 15px; /* Adjust the gap if needed for the mobile layout */
+    }
+
+    /* Ensure the input fields take the full width, but this might already be set by your existing styles */
+    .input-field {
+        width: 100%; /* Ensures input fields take up the full width of the grid cell */
+        font-size: 16px;
+    }
+
+    .waitlist-success{
+        font-size: 25px;
+        text-align: left !important;
+        width: 100% !important;
+        /* margin-top:0px; */
+        /* margin-bottom:0px; */
+        /* text-align: left !important; */
+    }
+    
+
+    /* .waitlist-content form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; 
+        width: 100%;
+        max-width: 100%;
+    } */
+
+
+    
+    
+
+  
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+ @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
