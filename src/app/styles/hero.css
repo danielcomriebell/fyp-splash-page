@@ -15,7 +15,7 @@
 
 .hero-container h1 {
     color: white;
-    font-family: "sohne";
+    font-family: "inter";
     text-align: center;
     line-height: 50px;
     font-size: 50px;
@@ -37,7 +37,7 @@
 
 .hero-container p {
     color: white;
-    font-family: "sohne";
+    font-family: "inter";
     text-align: center;
     line-height: 25px;
     font-size: 20px;
